@@ -27,6 +27,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:b4c37f161f9abc89aede53a621205cda38d2df6659dff7b8044d8295ed24291f"
+  name = "github.com/gofrs/uuid"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "4b36aa0ea796d49630bbae624f8f05ab7013af77"
+
+[[projects]]
+  branch = "master"
   digest = "1:1ba1d79f2810270045c328ae5d674321db34e3aae468eb4233883b473c5c0467"
   name = "github.com/golang/glog"
   packages = ["."]
@@ -55,14 +63,6 @@
   pruneopts = "UT"
   revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
   version = "v1.0"
-
-[[projects]]
-  branch = "master"
-  digest = "1:a3b8912deeef29007fab9a13a9f21b9e9b59c621a2ed61e2fe7b37320a71fbd5"
-  name = "github.com/satori/go.uuid"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "b2ce2384e17bbe0c6d34077efa39dbab3e09123b"
 
 [[projects]]
   branch = "master"
@@ -185,10 +185,10 @@
   input-imports = [
     "github.com/eapache/channels",
     "github.com/go-yaml/yaml",
+    "github.com/gofrs/uuid",
     "github.com/golang/glog",
     "github.com/golang/protobuf/proto",
     "github.com/golang/protobuf/ptypes/empty",
-    "github.com/satori/go.uuid",
     "github.com/spf13/cobra",
     "github.com/spf13/pflag",
     "golang.org/x/net/context",

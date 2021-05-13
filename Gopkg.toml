@@ -30,7 +30,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/satori/go.uuid"
+  name = "github.com/gofrs/uuid"
 
 [[constraint]]
   name = "github.com/go-yaml/yaml"

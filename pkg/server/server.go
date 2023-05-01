@@ -226,6 +226,15 @@ func (s *BfdServer) MonitorPeer(ctx context.Context, uuid []byte, cb func(*api.P
 	watcher := peer.Watch()
 	defer watcher.Stop()
 
+	// Get the current state and send it as the initial state to the callback
+	// Should it be even closer to watch?
+	initialState := &api.PeerStateResponse{
+		Local:  peer.GetLocal().ToApi(),
+		Remote: peer.GetRemote().ToApi(),
+	}
+
+	cb(initialState)
+
 	for {
 		select {
 		case state := <-watcher.Event():
